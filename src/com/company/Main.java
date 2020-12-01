@@ -1,30 +1,34 @@
 package com.company;
 
 public class Main {
+    /*
+     *  Class serves for counting gas price, net and the envelope
+     */
 
     public static void main(String[] args) {
-	// the cost of gasoline
-        double price = 42.50;
-        int volume = 50;
-        double money = price * volume;
 
-        System.out.println(money);
+    // the gasoline price
+        double gasoline_price = 43.00;
+        long amount = 50;
+        double total_price = gasoline_price * amount;
 
-    // the net pay
-        int gross_pay = 70000;
+        System.out.println("Gas price: " + total_price);
+
+    // the net
+        int gross = 70000;
         int tax = 13;
-        double pay_tax = gross_pay / 100 * tax;
-        double net_pay = gross_pay - pay_tax;
+        double pay_tax = gross / 100 * tax;
+        double net = gross - pay_tax;
 
-        System.out.println(net_pay);
+        System.out.println("Net wages: " + net);
 
     // the envelope
         double seconds = 3600;
-        int minute_per_hour = 60;
-        double hour = seconds / minute_per_hour;
+        double hour = seconds / seconds;
 
-        System.out.println(hour + " min");
+        System.out.println("Hours: " + hour);
 
 
     }
 }
+
