@@ -24,7 +24,7 @@ public class Main {
 
     // the envelope
         double seconds = 3600;
-        double hour = seconds / seconds;
+        double hour = seconds / 3600;
 
         System.out.println("Hours: " + hour);
 
